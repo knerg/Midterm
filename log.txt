@@ -1,0 +1,1289 @@
+* 7749793 : fix v-once inside v-for and v-once with v-if (#4200)
+* cccc277 : fix eslint
+* 4e38b54 : fix weex tests for component slot static check change
+* 46b3bcd : fix object dot notation bug (fix #4185) (#4188)
+* 9931b71 : avoid marking slot content as static.
+* 4f84aef : support v-model in weex (#4178)
+* 69eab86 : remove unnecessary alias
+* cb4854a : [weex] enable extended constructors to use mixins
+* ddac976 : adjust constructor option resolution timing
+* 8e810dc : tweak indent
+* 1bcc571 : Revert "fix #4041, warn overriding Vue's internal methods (#4111)"
+* eb601ad : fixed deps and README for the 2 packages about weex (#4160)
+* 40c85f7 : [release] weex-vue-framework@2.0.5-weex.1
+* cb13df3 : update build and release scripts for weex
+* 2f63cc8 : fix eslint
+* c4252d3 : fix weex merge flow types
+* ff55102 : wip: fix flow type for weex merge
+* cb253d7 : wip: weex framework integration
+* 550dcee : fix coverage
+* b69b4a4 : tweak style merge for performance
+* e960cd1 : enable style merge behavior between parent-child components (fix #3997) (#4138)
+* 33cf113 : Update ssr class render (fix #4143) (#4146)
+* a4fcdbe : make standalone build usable in Node.js too
+* 0ca13df : add missing backer
+* b7ab388 : Fix xhtml namespace typo (#4131)
+* a2cc6e2 : [release] 2.0.5
+* b064633 : [build] 2.0.5
+* c67a710 : avoid triggering watcher on unchanged default props (fix #4090) (26 seconds ago)
+* 6e3e989 : log render error instead of throwing
+* ef0d788 : remove unnecessary component normalization during options merge
+* 53964db : fix html parser infinite loop (fix #4127)
+* 51725cf : fix SVG foreignObject (fix #4122)
+* 5d36e8b : fix IE conditional comments (fix #4125)
+* 0973342 : [release] 2.0.4
+* 6b1b1d5 : [build] 2.0.4
+* d0afcd3 : fix domProps unset for v-html (fix #4107)
+* fa16b12 : remove unnecesary function
+* e5f23d9 : fix component attrs/domProps merging in SSR
+* 240df14 : Generate style on custom component in SSR (fix #4055) (#4076)
+* c23c5c5 : keep consistency in dev and prod env (#4093)
+* 4078ce9 : fix #4041, warn overriding Vue's internal methods (#4111)
+* 35f145c : Update vue.d.ts (#4105)
+* bc45535 : test sfc parser <style module>
+* d9efc6a : clone components hash to avoid webpack 2 immutable export (fix #4062)
+* 887ec90 : fix RenderContext (#4099)
+* 5a4c1d7 : Add support attribute module (#4091)
+* e2a361a : forgivingly handle < inside template plain text (fix #4012)
+* ec824be : fix v-once inside v-for (fix #3964)
+* 09f9783 : fix global mixin + export constructor in vue-loader (fix vue-loader#433)
+* cb1bb75 : fix global mixin props (fix #3957)
+* 4b8eb75 : fix coverage
+* 4314f45 : add umd runtime build for CDN (close #3948)
+* 0cd1489 : .number modifier should work with select, radio, checkbox (fix #4018) (#4022)
+* 4a3b4c4 : Small performance improvement in watcher.js (#4069)
+* a632d60 : Check and warn for falsy class names (fixes #4050) (#4051)
+* 8491857 : fix problematic use of 'deprecated' in warnings (#4043)
+* 2ac581b : SSR: eliminate closure in render.js implementation
+* b51b9ea : bump eslint config
+* 3fef65c : fix vuejsjob links
+* cca4469 : update backers
+* 20f7a06 : Inline export for consistency (#4066)
+* 0d35aa5 : Fix links on vue-template-compiler README (#4021)
+* defd45c : Typo fix: optimizier -> optimizer (#4015)
+* 7dc38de : fix SFC parsing pug templates that contains "<" (fix #3973)
+* 3105661 : v-model binding with array.  (fix #3958,#3979) (#3988)
+* 5f8ae40 : minor typos (#4011)
+* 9c91190 : Fix typos. (#3956)
+* 1a8720d : Fix typo in 'component' (#3978)
+* 6d31ed2 : typo fix (#3963)
+* 7c9575b : improve attr interpolation warning
+* 341d0a0 : fixed #3942 (#3947)
+* 8ba420c : Fix using one delay to control all transitions. (#3932)
+* 4f5a47d : fix root v-else not rendering in prod and switched examples to minified vue for better prod coverage (#3943)
+* 95bf0c0 : Add guide for PR title  (#3936)
+* 3bbac7e : [release] 2.0.3
+* 1e6a8f5 : [build] 2.0.3
+* 3f8fa43 : fix duplicate attribute test case in IE
+* d362d64 : update entities encoding/decoding (fix #3899)
+* a675221 : should not generate children for "is" component with inline-template (fix #3931)
+* 30bd34e : disable duplicate attribute warning in IE (close #3929)
+* ff178cc : fix directive rawName generation for raw render functions (fix #3930)
+* 8823fcc : expose preserveWhitespace option in template compiler
+* 6e96a65 : adjust component destroy logic (really fix #3882)
+* 6ab10c0 : fix v-for list auto-keying with nested <template> (fix #3913)
+* ea39d9f : fix static node v-for nested check
+* 5d0999a : ensure v-model runtime metadata for all types
+* e774ce2 : refactor: split vdom helpers into separate files
+* ceab0b7 : fix functional components that return string or nothing (fix #3919)
+* 7ca58b6 : small tweak
+* a9417e4 : select change event fix (#3922)
+* 443ef1c : Update CONTRIBUTING.md's jdfiddle template, and vue's version inside ISSUE_TEMPLATE.md (#3921)
+* 70aee1c : [release] 2.0.2
+* 617b998 : [build] 2.0.2
+* 864ef21 : fix deeply nested keep-alive components not being destroyed (fix #3882)
+* 03ea9f0 : fix flow
+* 7570a3c : test for directive refactor (fix #3848)
+* 1fa3844 : refactor directive update implementation
+* 4a74883 : improve mergeVNodeHook logic
+* e9bf5d1 : add warning for using v-model on v-for alias
+* 32383e5 : remove name option warning during instantiation
+* 4740597 : include component file location in warning if available
+* 1bb7cba : improve event warning with component information (close #3831)
+* 2ee6ef2 : replace special terminators chars (#3903)
+* 5300ef7 : fix style module removing styles with value 0 on update (fix #3905)
+* d0cfd54 : Revert "fix select multiple first option auto-selected in Chrome/FF (fix #3852)"
+* 8bb1e58 : fix multiple select render (#3908)
+* 71ef9d6 : update backers
+* cc4c066 : fix coverage
+* 484e538 : fix lint
+* 5b4b926 : avoid updating input value during IME composition (fix #3894)
+* be6e050 : fix `mounted` not called for manually mounted instance with parent (fix #3898)
+* 86f0d11 : fix dependency collection for multi-nested arrays (fix #3883)
+* 3446d14 : support functional components as named slot (fix #3872)
+* 5925ad3 : tweak select IE fix to reduce duplicate call
+* f9bef75 : fix select multiple first option auto-selected in Chrome/FF (fix #3852)
+* 74e4e11 : fix v-on handler with whitespaces (fix #3893)
+* 8d2fc8e : add getTypeList to process mutli-type prop (#3885)
+* de199f9 : allow 2 root nodes with v-if and v-else (#3887)
+* f59e903 : setTimeout fallback update  (#3868)
+* 6643cb8 : Update typings (#3876)
+* f35f7e3 : add v-model dynamic type warning
+* addb461 : fix ssr bundle renderer error on commonjs exports (fix #3867)
+* adae5ca : Make forAlias regex lazy (fixes #3846) (#3859)
+* 463c9c9 : Switch to https (#3864)
+* c2e6bf8 : Fix links to docs in Readme (#3858)
+* 6541e68 : add license information to vue.common.js (#3835)
+* c835ce5 : Allow text nodes on static templates in components (#3826)
+* e6d224c : [release] 2.0.1
+* d69b64f : [build] 2.0.1
+* 1c79c56 : revert npm main field (fix SSR externalization)
+* 156cfb9 : [release] 2.0.0
+* 3ad68b9 : [build] 2.0.0
+* 89adabf : remove --next tag in release script
+* 8ef603b : test <template> key warning, fix coverage
+* 51aa3e5 : comment
+* 99ea0f8 : adjust named slot resolve check (fix #3819)
+* b8369e8 : fix test template typo
+* ef69459 : Fix $createElement and Vue.extend (#3818)
+* 47ee6ab : remove codegen v-for truthiness check (fix #3817)
+* 6d4bdb5 : fix style binding for falsy numbers (fix #3816)
+* 8298323 : add <template> key warning
+* f1e37f6 : do not add list key to text nodes (fix #3810)
+* b559547 : change npm main
+* e29b711 : fix reference to backers.md (#3808)
+* e468ba0 : fix coverage
+* f7e878c : update badges
+* ae93d2b : update github links
+* e5a6beb : bump rollup
+* 0e8af34 : check MutationObserver native-ness
+* fd5ea73 : test iOS 8 instead of 7 given market share
+* e0698b2 : warn user calling Vue() without new (#3793)
+* 790c99c : fix IE/Edge select remembering selection (#3803)
+* aefb348 : Update `$refs` type declaration (#3765)
+* 1d3811a : update comments
+* e615431 : [release] 2.0.0-rc.8
+* ccd44f3 : [build] 2.0.0-rc.8
+* 310f5a2 : tweak v-model type=file warning phrasing
+* b8095bf : Warn when using v-model with input[type=file] (#3791)
+* 4675728 : fix coverage
+* 313ad8f : fix flow lifecycle method name [Vue@2.x] (#3762)
+* 43b489b : revert nextTick to microtask semantics by using Promise.then (fix #3771)
+* 08f2b97 : [release] 2.0.0-rc.7
+* 600d436 : [build] 2.0.0-rc.7
+* c791fc7 : fix unit tests in IE9
+* 403f3cc : set selected value on nextTick in IE/Edge (fix #3689 by @fergaldoyle)
+* c47e128 : move browser sniffing code back to core/util/env
+* bba8b91 : limit v-model runtime shim on text inputs
+* 037449f : ensure prop default value when instantiating without propsData (fix #3693)
+* 9566b33 : no need to return text in getValue for v-model select (fix #3729)
+* 9fb1057 : Adjust nextTick implementation
+* 7eb6c8c : expose warn as noop in production builds
+* 575e810 : Optimization unit testing [vdom/patch/children] (#3733)
+* 054b96b : improve move transition performance by avoiding layout thrashing
+* eef05ac : use rollup-plugin-flow-no-whitespace
+* b4c6fa4 : bump deps
+* 019d900 : add module augmentation test (#3713)
+* 4785afd : improve MutationObserver bug detection for iOS 10
+* 089c145 : overwrite static node key in <transition> to ensure unique pending key
+* 2b1a0b9 : extend commits e2e wait period because GitHub is slow
+* 1fe9ba6 : fix select2 e2e test
+* ccd8d58 : simplify todomvc example
+* 8242d94 : simplify todomvc example
+* 7a22f13 : update select2 example
+* c23986b : update markdown example
+* b935afe : update firebase example to use 3.x
+* 72a1527 : add inserted hook type to directive option (#3682)
+* 56960b5 : support object looseEqual in v-model (fix #3673)
+* d6a7568 : improve v-bind implementation and make it work on components (fix #3670)
+* 2b588b7 : Update ComponentOptions (#3651)
+* 43211fd : [release] 2.0.0-rc.6
+* ace1076 : [build] 2.0.0-rc.6
+* 45ff621 : handle multiline atribute value parsing in IE (fix #3663)
+* d0c13c7 : test undefined method warning
+* 724a593 : Add undefined check for instance methods (#3656)
+* 6f8316f : toObject should not mutate original objects (fix #3657)
+* 673dec6 : fix duplicate slot warning spelling
+* b47d773 : support short prop declaration as prop: true (#3643)
+* 4c7a87e : observer conversion enumeration should not include prototype properties
+* 34cdf69 : use eslint-plugin-flowtype (close #3583)
+* 179ec92 : fix lint
+* 100a296 : move slot cloning back to render function so that it works for jsx as well
+* 84dfc1d : [release] 2.0.0-rc.5
+* faecdb6 : [build] 2.0.0-rc.5
+* 1c4ca4b : fix lint
+* 7a2c986 : relax SSR hydration match check to allow client populating empty parent nodes
+* 4afccc8 : proper slot duplication warning (fix #3595)
+* f25482d : tiny comment fix
+* f541097 : Expose all types via index.d.ts (#3608)
+* 63e4757 : key nested children by default (fix #3611)
+* d2337df : remove ".d" from paths (#3607)
+* 8f4aab2 : Fix definitons (#3591)
+* 4061c42 : adapt index.d.ts for end users (#3582)
+* 5a03f52 : Update package.json (#3579)
+* 765e4a9 : lock jasmine version to avoid 2.5 breaking ssr tests
+* 04eb32e : fix typo (#3578)
+* 9727f87 : include typescript dep
+* 08a928e : include tsc tests in ci script
+* dfc64e8 : Add TypeScript definitions
+* 2998bbf : createElement won't return Array<VNode> (#3574)
+* a00170c : remove unnecessary appear check in v-show (fix #3559)
+* ada90e5 : revert directive bind invocation timing, add inserted hook for directives
+* 32971d8 : fix v-on patching for cloned slot nodes (fix #3556)
+* 8c427f7 : [release] 2.0.0-rc.4
+* 88906d6 : [build] 2.0.0-rc.4
+* 05a2738 : add dev:runtime script
+* a3314c8 : Fixed "delcare" typo error (#3552)
+* f6b1a51 : fix hot-reload not updating static nodes
+* 22b3645 : upgrade eslint config
+* ffd298f : add backers.md
+* dca93fc : update sponsors
+* 96444ff : include missing dep
+* f4a505c : support returning promise for async components (close #3527)
+* 982913f : upgrade flow to 0.31 (close #3482)
+* 638d182 : bump dev deps
+* c44f68d : fix dev scripts
+* 72710db : use same alias file
+* 1932b8f : bump circle node version
+* 97476a4 : more build tweaks
+* 961d109 : build adjustments
+* 98876f0 : ensure transition end detection only count events triggered on target element (fix #3506)
+* 4d640ce : tweak v-if to avoid unnecessary node replacement
+* 014d2f8 : fix vdom patch edge case for static nodes being reused and as insertion reference node (fix #3533)
+* ed20859 : ensure mergeVNodeHook does not inject duplicate hooks
+* 44128f2 : remove forgotten debugger statement
+* 3fa4076 : fix text parser regex for multiline tags (fix #3526)
+* 3627a27 : ensure custom directive bind is called after node is inserted (close #3529)
+* a152fe0 : only gen checkbox/radio model on input tags (fix #3516)
+* e6c5f21 : fix event initialization on reused slot nodes (fix #3518)
+* 0674509 : avoid triggering select reset when selectedIndex has not changed (fix #3504)
+* eef040e : vdom: teardown stale directives on patch (fix #3491)
+* 0f8ad06 : Fix Spelling (#3496)
+* 8d03a45 : [release] 2.0.0-rc.3
+* f5d4313 : [build] 2.0.0-rc.3
+* 72a0eb3 : remove extra paren in warning
+* 92903f3 : fix flow / missing annotations
+* d2df58e : move v-show marker to runtime so that render functions work as expected (fix #3488)
+* 16ce0f1 : prohibit mounting to body/html
+* fc78242 : invoke remove hook before destroy hook (fix #3481)
+* 3bd7e58 : v-show should ignore inline display:none (ref #3484)
+* 716823b : update links
+* 6342dd6 : move md files into hidden directory
+* 9108207 : annotations for createFunctionalComponent
+* d7f42cc : avoid IIFE deoptimization when using const/let inside if branches
+* 13ce3a2 : fix v-on chained keyCodes (fix #3478)
+* ba5fb31 : fix transition insert hook duplicate invocation on slot nodes (fix #3474)
+* 6bdb577 : fix name warning when instantiating extended components (fix #3472)
+* e62165c : ensure v-model to have higher priority than v-on events (fix #3468)
+* 1e74675 : expose Vue.set/delete on instances as vm.$set/$delete
+* 8e1478e : proxy: allow keys that start with _ to fall through (necessary for babel helpers)
+* e965298 : improve license info
+* ce798c6 : fix ref on empty component root (fix #3455)
+* e422a98 : [release] 2.0.0-rc.2
+* 179e9fd : [build] 2.0.0-rc.2
+* ac762c3 : fix v-if component root test in Firefox
+* 68be112 : Revert "support transition on component with v-show in root node (fix #3431)"
+* e08d6b9 : fix unnecessary child watcher calls on parent re-render (fix #3453)
+* 1bc13f8 : fix native events on components with inline-template (fix #3451)
+* f764db4 : more robust parent transition skip check
+* 7b4a5a1 : add warning for incorrect <slot> usage (ref #3447)
+* d927159 : remove unnecessary el setting in keep-alive
+* efb6035 : fix patch modules error on empty component root
+* 397e64a : include templates in ref spec
+* aab560e : support transition on component with v-show in root node (fix #3431)
+* 174e936 : fix v-model on input[type=range] in IE (fix #3439)
+* 854ccce : prevent out-in transition to enter early when parent re-renders (fix #3440)
+* 6a15602 : warn missing event handlers (ref #3430)
+* 238f65d : fix _scopeId on non-element component root
+* a5a501e : fix #3437 properly without hacking the type system
+* 9bbf723 : work around flow :(
+* 9d43bff : fix component in slot lifecycle (fix #3437)
+* 63fe7fc : fix spec fit
+* 299f529 : fix transition enter hook for v-show (fix #3433)
+* 33bd509 : add readme
+* d9a6150 : coc and issue template
+* a49a739 : remove log
+* 71db0bf : add diagram in ssr docs
+* ea77ac2 : Allow rendering forbidden tags on the server (#3425)
+*   543ff97 : Merge branch 'show-display' into next
+|\  
+| * 86bf3da : fix flow error for #3393
+| *   837b0b2 : Merge branch 'bugfix/v-show-not-respecting-orig-display' of git://github.com/chrisvfritz/vue into show-display
+| |\  
+|/ /  
+| * dcd1469 : store v-show original display value directly on el
+| * a4ac2eb : made v-show respect display values in style attributes
+* | 7b42671 : [release] 2.0.0-rc.1
+* | df85865 : [build] 2.0.0-rc.1
+* | 8367d48 : fix prop type in IE9
+* | a88e233 : adjust prop validation to work across vms/iframes
+* | 0e75fb9 : use component name for SSR caching (also allow full externalization)
+* | 1cde06b : [release] 2.0.0-beta.8
+* | 1cb4886 : [build] 2.0.0-beta.8
+* | 5b80d05 : skip transition on non-elements
+* | cdc0bc9 : improve keep-alive: use component-based API
+* | 7c3db41 : warn undefined render/template during SSR
+* | 5c55dec : SSR: relay renderStream error in bundle renderer
+* | 18386c4 : fix static nodes optimization inside v-for (fix #3406)
+|/  
+* 75b2f52 : coverage
+* 6e1597c : fix quote decoding for templates retrieved from innerHTML (fix #3403)
+* 21908b7 : ensure children is only re-resolved on parent update (fix #3400)
+* 1c0effa : skip v-show transition if value is the same (fix #3395)
+* c2c68d6 : [release] 2.0.0-beta.7
+* b3f6d79 : [build] 2.0.0-beta.7
+* e833d95 : test iOS 9.3 on sauce
+* bb58b2d : tweak transition appear check
+* 2d58d0e : fix all unit tests
+* ecd9c7d : revert functional component parent
+* fe801b1 : wip: fix $parent after children change
+* b5b963f : wip: refactor children resolution (remove thunk mechanism)
+* 2289481 : fix ssr v-bind test
+* c66b756 : fix flow
+* 59b2a0e : support class/style in v-bind object
+* 351aef3 : use comment node as empty placeholder (fix <transition> SSR hydration)
+* 0212521 : add move animation example
+* 8b46747 : fix hydration coverage
+* 40b93e6 : avoid unnecessary enter transitions on nested inserted elements
+* a71d235 : further tweak SSR mismatch warning
+* 21d7ad6 : filter out empty strings when normalizing children (fix SSR match when containing text is empty)
+* 5ed0c16 : better hydration fail warnings
+* fea13b8 : fix flow error
+* b283f53 : support :style bind to text in SSR too
+* 69ba01e : support :style binding to strings (fix #3379)
+* fd3377d : [release] 2.0.0-beta.6
+* 2cdcccc : [build] 2.0.0-beta.6
+* 42c1950 : properly merge classes between multiple nested components sharing the same element (fix #3365)
+* d9d4e7f : prevent nested thunk children from failing (#3367)
+* e1ab28c : improve coverage
+* 7f429e9 : discard vnode children if it has innerHTML or textContent as a prop (fix #3360)
+* f31366c : add tests for some :class and v-bind edge cases
+* 682a840 : add reference link in uptime bench
+* 6e471ea : fix v-show transition on child component root (fix #3354)
+* 45e1ffd : fix pause button in uptime bench
+* dfd309e : use functional components for uptime bench
+* 4f2537a : add uptime bench
+* b3cc0ef : fix flow
+* 31839a1 : remove unused before:hook
+* 621756e : use more efficient deep update handling for dom modules
+* 6fac625 : fix typo in contrib guide
+* c229684 : add ToC to contrib guide
+* 215a5d1 : edit project structure
+* 0860cde : add license and contrib guide
+* feb431e : update readme [ci-skip]
+* d7ae390 : fix class updates if new vnode doesnt contain any class data
+* 35ee5b1 : remove staticAttrs
+* 3e06c57 : Allow 2 root nodes with v-if and v-else (#3329)
+* 7b3cb27 : update nightwatch-helpers
+* 04e2b53 : properly perserve whitespace in <pre> (fix #3341)
+* 40e37f1 : remove transition text node warn spec
+* 63dd9d3 : remove transition text node warn because the wrapped component may return empty nodes
+* bbc07af : allow to initialize value attribute to 0 (#3334)
+* 9cbe4a3 : [release] 2.0.0-beta.5
+* 729d9ff : [build] 2.0.0-beta.5
+* 998ea85 : support explicit transition type
+* ba5ec54 : include pre/post transform declarations
+* bee95f8 : Revert "remove parser pre/post transforms (not used)"
+* 74f8b98 : handle static vnodes properly during patch (fix #3325)
+* e84a1a4 : fix attribute decode reggression (fix #3327)
+* 0009105 : check version compatibility in packages
+* 88c3f4b : [release] 2.0.0-beta.4
+* 28a9522 : [build] 2.0.0-beta.4
+* 4537e01 : only check shouldDecodeAttr in browser
+* 097889f : proper fix for attribute decode in PhantomJS
+* 3ce450b : use more proper flow type syntax
+* d83088a : extract nightwatch-helpers into npm package
+* 2388bdb : fix transition appear check (again)
+* 2c6930a : further improve scheduler
+* 2456cd2 : fix prop validation incorrectly setting observerState.shouldConvert
+* 3e0cda6 : fix transition appear check for nested components
+* 2288f3e : [release] 2.0.0-beta.3
+* d6ffe2c : [build] 2.0.0-beta.3
+* 65d4ae9 : ssr: cast node.text to string before encoding
+* 5f560a4 : fix client-side hydration check for v-html/v-text
+* 9c4bf35 : make v-model checkbox replace array instead of mutating it
+* 609054e : remove bind.prop shorthand
+* 0f5bcdf : fix flow
+* 23a22cb : support slots in functional components
+* 154e17a : support binding DOM properties with .prop modifier and :: shorthand
+* 472b897 : adjust scheduler: call user watchers before component updates
+* 27c221b : ensure leaving transitions are up-to-date for dynamic transitions
+* d94f113 : fix incorrect unknown element warning (fix #3296)
+* ea9c6c3 : support v-on .native modifier on components
+* 7a5028c : fix codegen import
+* 2e7a792 : remove parser pre/post transforms (not used)
+* 1e0e4a4 : move codegen into sub directory
+* 8d89d58 : preserve actual component props
+* 69ecdcb : rename vnode.data.props -> domProps
+* b46baac : always update abstract components
+* 1bb7830 : call pending enterCb before move
+* 270e468 : ensure moveCb only gets called on transform complete
+* a4d63a1 : adjust transition-group pending move callback execution timing
+* bd58337 : [release] 2.0.0-beta.2
+* 5ef712e : [build] 2.0.0-beta.2
+* 593cf39 : fix move test case
+* 6f7ec7f : add computed property ssr test case
+* e6871a3 : update flow annotations
+* 2732fec : tweak error handling
+* 93fb4df : position transition guard properly to fix e2e modal test case
+* d867b9e : test observed vnode data warning
+* 819e3ce : avoid calling duplicate enter/leave when already in transition (fix #3252)
+* f0aef75 : warn observed vnode data + handle in place mutations for vdom modules (ref #3276)
+* e6dcd21 : better infinite loop warning
+* bff94f3 : include local tag in keep-alive cache key (fix #3269)
+* 5660052 : revert todomvc example (need to pass e2e)
+* 6f4601c : test transition-group
+* b8c3b5a : todomvc example: pre-initialize state before mounting app
+* c1d8ccb : add move transitions to todomvc example
+* 210a3a2 : test in-out early cancel with keep-alive
+* ccf3a61 : improve transition coverage
+* 70e531a : test removing stale leaving elements
+* cf13336 : test transition HOC
+* 05ef502 : coverage for nested SVG vnode namespace
+* 45a489b : support move transitions in transition-group
+* 940ebf2 : update firebase example to use transition-group
+* e8552e7 : implement same props interface for transition-group
+* a7508b1 : implement transition-group
+* bbd022e : fix comment typo
+* e61a018 : update examples with new transition api
+* 6672481 : fix transition test in phantomjs
+* e94ad14 : remove vm argument in transition hooks
+* ef31193 : all tests pass for new transition API
+* bb3fe8e : update transition mode specs
+* 582a893 : really fix out-in mode
+* 39bcd60 : remove no longer necessary specs
+* 5c96daa : fix out-in mode duplicate calls
+* fcb1e38 : update transition tests for new syntax
+* 6e847f1 : remove log
+* ce04253 : better handling of transition hooks
+* 17a4a9c : emit transition events
+* 7ad4eb0 : fix prop types
+* f3c80f2 : remove transition as an asset type
+* 18bb901 : wip
+* 416ef9f : better out-in
+* 9ced85e : merge transition-mode into transition
+* cdca163 : locate first non-abstract parent as $parent
+* d960dfe : save
+* afc4149 : fix svg component children
+* d0482a0 : should not keep slot name when passed further down (fix #3259)
+* 8401852 : ensure child components insert hook invoke timing
+* 75a221e : tweak slot resolve
+* 1a064a6 : reset slots on each render
+* 1355dbf : remove no longer needed built-in tags
+* bff55e6 : revert incorrect intermittent key logic
+* 8260b17 : add <aside>
+* 0de925b : fix transition on child component root node
+* 4be4b89 : handle intermittent key presence during patch
+* e3f624e : add assertion for enter hook timing
+* 0e9cc97 : transition: ensure correct stale element removal timing + fix enter hook timing
+* 7318bf4 : transition: remove pending leave element on enter
+* 16e948a : normalizeChildren should pass down namespace recursively
+* 2f48226 : use console.error as default behavior
+* 44ef3db : tweak createElement
+* ac7d2dd : add "body" as reservedTag (#3248)
+* 0764ae2 : ensure unique key for elements with transition (fix #3247)
+* a06a2d0 : tune scheduler to ensure update order for late-pushed watchers
+* 9a7db5d : fix keep-alive non-component child
+* ed3f395 : [release] 2.0.0-beta.1
+* a09e8bf : [build] 2.0.0-beta.1
+* d164cf5 : directive: always call update + ensure modifiers
+* 2c4fe07 : skip unknown element test on Android 4.2
+* b26ec09 : update ssr cache documentation
+* 42889ff : fix global directive function shorthand (fix #3243)
+* dffeb1d : fix HOC root node replace updates
+* e0c77dd : adjust createElement component/namespaced priority
+* 751b0c8 : fix watcher tests
+* 9b94176 : fix functional test
+* 1fb227c : fix watcher path check
+* cb663db : revert keep-alive (should apply in all cases)
+* 0e94b70 : make functional component children a thunk
+* ef923be : only check keep-alive on dynamic components
+* 03621ee : adjust render fn + fix props validation for functional components
+* b6d386b : fix getReadlChild types
+* 9421bd4 : extract getRealChild for abstract components
+* d4a167e : watcher errors should be handled in production mode as well
+* ae9e7da : fix missing component tag
+* 7630622 : expose component placeholder node in render fns as this.$vnode
+* 7b4400d : fix createElement ssr perf regression
+* 4a66c3d : fix flow
+* 5c6c8c7 : include compiler in vue-server-renderer
+* 93342d7 : fix coverage
+* 579ff4d : fix nested svg namespaces
+* e17f2ba : remove html encode cache in ssr
+* bf9c46f : server.getCacheKey -> serverCacheKey
+* c665a68 : pass vnode raw data in functional component (#3168)
+* b3710e0 : fix eslint in tests
+* 06ca85d : port hyphenate fix
+* 5b668a9 : warn non-Array value for <select multiple> (close #3191)
+* 41a3b79 : add compile option test (#3181)
+* 5882a0e : transition: onEnter -> enter, onLeave -> leave, onAppear -> appear (ref #3172)
+* 7827593 : custom directive: postupdate -> componentUpdated (ref #3172)
+* ac15b04 : ssr doc version fix
+* 49213f3 : update ssr docs on cache
+* ba3bec8 : SSR: allow user to provide own (possibly async) cache implementation
+* 6cf1929 : adjust v-model on component sync mechanism (fix #3179)
+* 1b60a88 : adjust sameVnode check (fix #3176)
+* feee9ef : remove camelCase tag warning
+* 8de6dec : add a section about externals
+* 8592151 : [release] 2.0.0-alpha.8
+* a633b3b : [build] 2.0.0-alpha.8
+* eb9eb98 : use de-indent module
+* dde29d7 : fix keep-alive nested child components
+* 3661b4e : add _inactive property
+* 1ca3369 : tweak ssr docs
+* 82f4981 : ensure oldVnode always has data during patch
+* 3c523f2 : docs for ssr
+* dd1c936 : docs for vue-template-compiler
+* 589e644 : use unique sauce build ID during releases, add sauce badge
+* a3e26ac : [release] 2.0.0-alpha.7
+* a896daf : [build] 2.0.0-alpha.7
+* ce093bd : adjust saucelabs browser list
+* 98a7e75 : increase transition test durations for suacelabs
+* 7043fa6 : bump karma & rollup
+* 827ac27 : fix eslint
+* b791c57 : tests for ssr bundle renderer
+* 43fabd5 : pass the context vm in transition hooks
+* 0800fbe : allow omitting data in createElement
+* 06b4703 : element namespace should be resolved at runtime for render function / jsx usage
+* f20b1a8 : fix ssr test case for init -> beforeCreate change
+* 8c86973 : rename: init -> beforeCreate
+* 1b3b194 : merge renderElement and renderElementWithChildren
+* cf8aedd : fix v-once with v-for and remove unused _t method (fix #3155)
+* 3f91f65 : fix id-resolved appear transition (fix #3157)
+* 1d02463 : avoid traversing frozen objects in deep watch
+* 51db341 : improve cache hit by caching nested components hierarchy in one pass
+* e71db5e : extract write function logic
+* 651263b : even better ssr caching
+* 9344bd7 : better bundle renderer error handling
+* 5854f0f : move bundle renderer into src
+* 36e63c2 : coverage for new global mixin strategy
+* c902e1f : ssr component-level caching + context injection
+* 1d8f3a2 : better global mixin strategy
+* 1d88d9b : use isServer flag instead of runtime detection
+* 3245c72 : fix ssr dev config
+* 175282e : make ssr files compatible with older node versions
+* 4cf710e : update ssr package
+* 646061f : merge adjacent text nodes
+* c7b6183 : only call query() when in browser
+* 7698270 : cast primitive children to string
+* 7304385 : fix global mixin recursive name lookup
+* 76d7809 : config.errorHandler should capture user wathcer errors too (ref #3142)
+* 194b20a : fix transition spec typo (#3141)
+* ebd8d5f : fix transition active class application timing to avoid initial flash
+* 3fe127b : fix v-model number conversion (fix #3140)
+* dcd82c2 : [release] 2.0.0-alpha.6
+* 621048e : [build] 2.0.0-alpha.6
+* ea0f6a1 : check vm.$el presence first
+* f0b8f2e : attach __vue__ to elements to support devtools
+* f8e2546 : add devtools hooks
+* 563672e : fix flow def
+* f0efa9a : rename _keyCode -> _k
+* 4fe51a7 : prohibit replacing Vue.config + support custom keyCodes
+* 63da54d : fix v-on number keyCode support
+* 59dca12 : remove unused var
+* 35d137c : move dep target logic into Dep itself
+* 2c63e94 : fix watcher prevTarget state when evaluating computed lazy watcher (fix #3133)
+* de0b4b8 : fix error detection on string interpolations (fix #3137)
+* 634a073 : support sync watcher as internal flag
+* 0c9c6ed : guard input value as string for v-model
+* 9071dfd : test directive binding.expression
+* 8d2ee3c : expose expression on directive binding
+* 9115291 : move sfc parser spec
+* 2af9f68 : remove source-map generation from sfc parser
+* cf1a697 : fix v-model warning on component (#3102)
+* 439ca63 : fix sfc-parser unary tags handling
+* 2725292 : Add failing test.
+* f2bd3ed : bump flow version
+* 59230fe : [release] 2.0.0-alpha.5
+* 900bfc1 : [build] 2.0.0-alpha.5
+* 68a73cf : support dynamic refs
+* c949c74 : change ref to a built-in attribute
+* e3fb6fe : remove <render> tag
+* d398023 : functional components
+* 41e4647 : pass createElement into render functions
+* 6a3430d : lowercase component names before checking for native tag warning
+* 2bb1504 : prohibit replacing $data
+* c1a523d : use same sauce build id during release
+* 7c90dc9 : [release] 2.0.0-alpha.4
+* 6d4f23c : [build] 2.0.0-alpha.4
+* f2419a7 : support config.ignoredElements
+* f058a21 : fix identifier re
+* 5c3e208 : [release] 2.0.0-alpha.3
+* c422de1 : [build] 2.0.0-alpha.3
+* 9e14146 : temporarily disable firefox in e2e tests until nightwatch updates to work with FF 47
+* cfe745e : apply scopeId to slot contents too
+* d76bf8c : improve template error detector
+* a5ccee3 : make modal e2e test more stable on CI
+* 081d66a : keep preserveWhitespace as internal compiler option
+* b1351be : support _scopeId in SSR
+* b0ad94f : properly encode HTML in server-side rendering (fix #3078)
+* 67da70d : refactor: split server-renderer props handling into separate module
+* efa3fc7 : [release] 2.0.0-alpha.2
+* e93286d : [build] 2.0.0-alpha.2
+* 5504ae5 : tweak ci script
+* 94c7527 : Nextrefactor: `.test` is faster than `.match` for regex bools (#3074)
+* d1a5298 : adjust build setup
+* 8785b79 : adjust ci script
+* 22a4d77 : fix select2 e2e test in phantomjs
+* 9d57879 : record screenshots for e2e test failures
+* bd71c06 : tweak e2e script to allow passing in more flags to npm task
+* 000433c : get tests passing on all suacelab browsers
+* cec833a : implement new v-for iterator syntax (ref: #3073)
+* 9842f3e : refactor sfc-parser to handle nested template tags
+* e472623 : add location info to html-parser
+* 714f793 : remove unnecessary code in html-parser
+* 5d582df : Fix options for inline-template instances (#3063)
+* 687dcee : readme placeholders for packages
+* 32ba31c : bring back ci script
+* bffb9d1 : [release] 2.0.0-alpha.1
+* 0a1c19d4 : [build] 2.0.0-alpha.1
+* 193f307 : release script
+* fbe81fb : Load external assets with https in select2 example (#3053)
+* 9438408 : fix SSR tests after preserveWhitespace removal
+* 13d64d2 : remove preserveWhitespace usage in dbmon
+* cccfda9 : test for config.optionMergeStrategies
+* 34bcc02 : remove preserveWhitespace config option
+* d813c59 : change default error behavior to throw
+* a5cd31a : coverage for sfc-parser
+* f0a9e3d : test padding and source map for sfc-parser
+* 77151dc : support source map in sfc-parser
+* b0b9691 : add pad/map option to sfc parser
+* d94225e : rename sfc-parser export
+* 29bcf88 : update template-compiler deps
+* 894d214 : tweaks to support hot-reload
+* 7503f8e : support _scopeId
+* 5eca12f : allow require as a global in proxy check
+* 3edfc45 : support postTransform as well
+* 3ddef0c : add preTransform option for compiler modules
+* 8924e91 : v-pre nodes should use staticAttrs
+* a20dd86 : more efficient compiler module handling
+* a53d54a : fix whitespace vnode identity breaking patch (fix #3043)
+* be51320 : no longer need track-by in dbmon
+* c995e1e : use key instead of track-by in benchmark
+* d9ce130 : fix tests for global name override
+* 56ebb00 : fix global component name
+* be9264f : ignore packages in eslint
+* 02d5330 : detect and warn against using keywords as property names
+* 0d59865 : update coverage badge link
+* b1ef7cf : coverage for sfc-parser
+* f8daf74 : adjust build
+* e236f80 : parser for single-file components
+* b6fb485 : rename compiler module export names
+* 026198c : remove unnecessary code
+* b02b1e5 : better template compilation error warnings
+* 2091c85 : coverage
+* e433032 : test for keep-alive teardown
+* 8129e0c : tests for keep-alive
+* 15d6500 : tests for transition-mode
+* 8df4ac0 : make sure keep-alive and transition-mode works together
+* cb67ffe : ensure abstract HOCs do not alter parent chain
+* 7a06a9d : prepare keep-alive and transition-mode tests
+* 90ee637 : keep-alive should be in core
+* 942ba3a : cherry-pick #3027 iOS 9.3 MutationObserver fix
+* a5a9dc9 : support keep-alive
+* 8d22ee9 : add ssr custom directive test (#3030)
+* 170acc4 : Fix typo in util/debug (#3032)
+* f86a47d : fix transition-mode on keyed normal elements
+* 7a32611 : transition-mode
+* 8015100 : improve inline transition test (test merging with exsiting definition)
+* 9adbe9c : also test mounted for child component
+* 0733278 : merge inline transition defs with resolved def
+* 93501f2 : transition refactoring
+* 4cff0a7 : use separate className for appear transitions
+* 4bcdce8 : record original tag name on vnode for components using is attribute
+* 113232f : add component info in render warning
+* d3547f3 : more proper fix for same-key different-tag children handling
+* d237aab : do not add css classes if a transition has css:false
+* fef28c1 : only mount child component to existing element if hydrating
+* b35f4a9 : always process key
+* 48a0d29 : rename track-by -> key
+* c4c3ebd : Added the missing break (#3021)
+* 03e0dab : add prop mutation warning
+* 313442d : test create component hook merging
+* 060fab9 : make ref a runtime module
+* 8f274a3 : complete coverage
+* 4290cdb : fix hydration warning test in phantomjs
+* d40ab0c : fix component client-side hydration
+* 2ce08d6 : test transition on child components
+* bb5c102 : fix errorHandler tests
+* 068f627 : test for errorHandler config
+* eca4ad8 : more tests/fixes
+* 76b4b8d : log error stack instead of throwing in watcher
+* fd6a31f : update duplicate key warning message
+* f8cfc81 : remove unnecessary v-pre related code
+* bd12a68 : add v-ref + v-for test case
+* 3e596bb : handle event removal
+* 1fc251c : rename errorHandler config
+* 366188f : coverage improvements
+* ff9c6b0 : fix svg parsing in IE
+* 2e678b8 : remove classList polyfill in tests
+* b42f4b4 : improve transition tests
+* 79bfb18 : more transition tests
+* 74538b4 : basic transition tests
+* 9c2ca07 : more coverage improvements
+* 6a48b35 : props tests
+* 3db3ca5 : fix ssr tests
+* 4179ba0 : small coverage tweaks
+* a326c91 : improve proxy property warning
+* 47f2443 : also warn set/delete on instance root $data
+* 818faa7 : options watch tests
+* 26bc000 : options computed test
+* b83b597 : no need for unbind in model runtime
+* 563cdba : improve coverage
+* 7913a96 : fix test in phantomjs
+* 2a09188 : options propsData tests
+* ed10dcf : add asset resolution warning tests
+* 2f79bd2 : options data tests
+* 0abbdd9 : more filter tests
+* f234982 : test for misc instance properties
+* 5b18542 : option extends tests
+* 43da334 : test programmatic $slot access
+* 7bb5234 : options filters tests
+* 1e90fd6 : component option tests
+* 0450aba : improve Vue.extend tests
+* d62eacd : directive option tests
+* 99a96d3 : should invoke destroy hook for replaced root nodes too
+* 5aeb7f5 : lifecycle hook tests
+* 20758d5 : instance methods tests
+* f5bc3e5 : add options render tests (#2966)
+* a99bed7 : just use lodash itself since it is already a dep
+* d91eda8 : add options el tests (#2967)
+* 0523594 : add options template tests (#2968)
+* c6d749b : bump dependencies and fix toEqual matcher in Safari
+* efd589e : return emptyVNode if render function is not provided
+* 3a0557a : component slot tests
+* 87820e9 : remove select append selectedIndex test case
+* 2a64b8a : tests for v-model select
+* 22d7acb : always set props even if value is the same
+* c2ef6d8 : v-model checkbox tests
+* 1914dfe : v-model radio tests
+* 0e67d82 : remove transition specs (to be tested in its own suite)
+* b370eac : fix unit tests in IE9
+* cc06868 : improve hydration test case
+*   0fd43c9 : Merge branch 'test/patch' of git://github.com/kazupon/vue into test/patch
+|\  
+| * a6ac886 : add vdom helper
+| * 31c6355 : add eslint ignore for test
+| * 02cdbd2 : add patch tests
+* | 2421265 : tests for parent, name and mixins (#2959)
+* | 1c63253 : amend render tests
+* | af16d36 : add render tests
+* | dc76830 : fix test error in phantomjs
+* | 056cb7f : test for v-model text
+* | 20f6e6e : adjust binding attr retrieval priority
+* | 69abe1b : make sure to expose real instance instead of proxy as vnode.context
+* | 2114cca : support using extended contructors as mixins
+* | 6b4a617 : Fix render codegen bug (#2954)
+* | 34b37a6 : test for v-cloak
+* | 6a06b0d : include eslint during dev
+|/  
+* cb915d0 : fix linting issues
+* 5594a7c : tests for v-bind object
+* 8d229b2 : support v-bind on objects
+* 54e648e : include patch process in watcher getter to ensure correct dep collection for deep updates
+* 49b6288 : tweaks
+* 7f85acb : expose oldValue on directive bindings
+* 6195742 : fix v-show transition on appear
+* 8c8eaea : restructure global api tests + ensure global mixins work regardless of constructor creation time
+* 7d55af6 : Delimiters tests (#2948)
+* d263bb2 : adjust directive hook signature to expose all information
+* 48f22c9 : fix flow error
+* 0a15d9e : add root element warnings
+* df73cbf : remove v-bind:style important test case due to phantomjs inconsistency
+* c972b80 : fix delimiters caching (fix #2940)
+* 30c8219 : add create-element tests (#2930)
+* 93bfc9b : Unit tests for v-bind:style (#2932)
+* 82c7617 : use extend instead of Object.assign() since the latter is not avaialble in phantomjs
+* f529735 : fix linting problems
+* 9d3479a : rearrange option tests
+* 79b29f7 : added ref directive tests (#2892)
+* acd712d : fix ref codegen
+* af0bf2a : async component tests
+* 3245ee6 : fix root mount with emptyNode
+* 600ebfb : simplify compiler tests
+* 0f46d95 : add create-component tests (#2928)
+* 837853d : better inferring of component names in warnings
+* 7833145 : improve watcher evaluation error warning
+* 59e92a5 : screw ie8
+* 6fe2688 : improve codegen for smaller generated code size
+* 680baf8 : add codegen tests (#2894)
+* f8ece61 : improve waitForUpdate() syntax
+* 0b1460d : add csp warning
+* 8e35604 : added pre directive tests (#2891)
+* 19495df : use babel-plugin-coverage instead
+* ae7becf : remove test.js
+* 39e42f5 : add vm annotation in init
+* 2e8dfe5 : revert _init method for Vuex (#2886)
+* 36a32e4 : tweaks based on #2885
+* fd6944a : small tweak for coverage
+* 1d45c4b : extract style/class/transition as web platform compiler modules (#2885)
+* 94d186b : update ssr benchmark
+* da4124c : unit tests for v-bind:class
+* 4618914 : Added benchmark for SSR (#2842)
+* b67143a : fix optimizer isStatic check
+* 3573fff : refine ast nodes with disjoint union type
+* c908352 : fix node-ops type declaration
+* 6daba53 : add optimizer tests (#2882)
+* eaddbe5 : update track-by usage in test
+* 6209de6 : use babel coverage plugin instead of isparta loader
+* b8ffc65 : add parser tests (#2878)
+* df259d0 : tweak annotations
+* 71a0f3e : optimize internal component instantiation
+* 0dc5d96 : fix declarations
+* 2dc5b17 : simplify children render mechanism
+* 20fb79a : new render mechanism (#2857)
+* 750bec1 : annotate platforms/web
+* b65511e : add scheduler tests (#2869)
+* a74f53b : annotate compiler
+* b17ea5c : annotate codegen
+* 68e8c39 : annotate parser
+* 7b3ba65 : declare component options shape
+* 59fcd4e : finish annotating vdom
+* ff16f74 : no need to import VNode type when its imported in declarations
+* 45d96c7 : annotation for vdom (wip)
+* d3878c2 : add coverage badge
+* 68dac4c : fix ci script syntax error
+* 8c6db60 : setup coverage
+* 991db6e : update dep range
+* 9a8e5d6 : use explicit ci steps
+* 82da272 : add watcher tests (#2868)
+* 209b421 : use ci script
+* f90b696 : also run flow on ci
+* bbc3031 : add flow script
+* ff738e3 : add eslintignore
+* 1b7ab89 : rework type annotation strategy: use interface instead
+* 6dc2662 : remove branch restrictions so PRs can run
+* 0bd9a31 : annotate core util
+* a953bde : annotate observer
+* 1a65dc8 : annotate global api
+* 354ea61 : annotate Vue class
+* 182a45e : annotate shared/util
+* fe48c6c : annotation tweaks
+* 6a94e2c : annotate config.js
+* 6d71275 : annotate ssr code
+* 623bcc6 : update build setup to make babel work properly with flow
+* 6e9614d : fix ssr:dev task
+* b926b9e : annotate entries
+* 7ac7cae : add error handling for srr
+* 9b59ccc : Fix issue with renderToString stack length overflowing (#2840)
+* d6ced71 : prohibit Vue.set/delete on Vue instances
+* 64de68b : add observer tests (#2855)
+* 35440d9 : SSR warn for no VUE_ENV and add tests (#2844)
+* efbb398 : remove tern, update flowconfig
+* 4e4e68d : include flow check in npm test
+* 328bc28 : update build setup for flow
+* 8ed2f8e : first file annotated!
+* b139cdb : add flow config
+* 07cf644 : return this in $mount, make unit tests more consistent
+* 4dc4235 : use _isServer flag to determine whether __path__ should be noop
+* 76d06ba : implement $isServer and ssr observation skipping via env variables
+* 5d08de5 : ensure scheduler depletes all queues
+* e38e494 : Moduralize the noop() function (#2834)
+* 5a5c7eb : ready -> mounted
+* 2021b1f : layout unit test files
+* 35efe4e : rename batcher to scheduler
+* 6593be9 : update unit tests convention + basic component tests
+* faa8245 : <render> method should use dynamic binding
+* 19f3fab : add tern config file
+* 097bb2e : tweak render stream implementation
+* 8172e7e : fix ssr tests
+* 8f5a32b : tweak render logic
+* 4984482 : tweak ssr async resolve, revert $forceUpdate change
+* 2b7c26d : fix tests
+* 430fe64 : only create render function once
+*   270b0ac : Merge branch 'ssr-improvements' of git://github.com/blake-newman/vue into ssr
+|\  
+| * 916bbfd : improved resolving mechanism for resolved components
+| * d89c674 : added manual rendering
+| * a233e4d : improved SSR rendering
+* | c556190 : fix ssr test
+* | c1bb12a : fix reorder benchmark after track-by change
+* | 96f0266 : use classes
+* | be2e79d : fix ssr tests
+* | f01e859 : bump build babel preset
+* | 27033b7 : update build script and npm files
+* | 3be4071 : bump babel version
+* | 9505d81 : add warnings for options with restrictions
+* | b6d02d2 : support extends option
+* | 5fb1a54 : make attr behavior more consistent + fix tests
+* | ae78813 : [Vue 2.0] Fix BooleanAttr & EnumeratedAttr serialization (#2810)
+* | 4ff27c9 : remove v-else support for v-show
+* | d1abc2f : use eslint-config-vue
+* | 5ec4246 : updated dependencies to latest, with better control ranges (#2780)
+* | 5516f37 : improve batching strategy
+* | 9cc9393 : fix default slot fallback on whitespace
+* | 68372ea : update track-by usage
+* | 1c09f63 : fix value prop handling
+* | 49d5f2f : Suppress a warning 'Unknown custom element' with SSR <img> tag
+* | 9a6d80c : comment spelling errors (#2800)
+|/  
+* 014ac35 : fix eslint again
+* cdab583 : enable linting during test dev
+* 3aa7503 : prefer const
+* f0f2b76 : fix eslint
+* bdb4b80 : update examples to use filters
+* 2f0222b : layout test files
+* 72b74a2 : improve v-for unit tests
+* 2679653 : test for Vue.compile
+* e275b75 : test/fix global filter registration
+* 9ff87a3 : support filters inside text interpolations
+* f9613c5 : ignore dist files in babel
+* b66be95 : support inline-template
+* 6d889c0 : simplify children updates
+* 08f813f : optimize whitespace vnode
+* 378a6fd : support delimiters as a component level option
+* 3b57161 : Replace var with proper let/const (#2757)
+* 5a43d32 : Add a default font style (#2755)
+* 8e34f45 : Some improvements for "Modal" example (#2754)
+* 60ec66b : CSS fixes for "Grid" example (#2753)
+* 6f06f1b : Expose the author URL in "commits" example (#2751)
+* da7f273 : fix x-template typo in select2 example (#2748)
+* b756a64 : add links to readme [ci skip]
+* cab88c5 : fix child component v-on spec
+* 680bd04 : fix v-on test capture
+* 25efaf2 : [next] v-on test (#2741)
+* 681dc60 : added v-once directive unit tests (#2740)
+* e04c55c : move ssr modules/directives assembling into platform specific directories
+* f123bd3 : forbid tags with side-effects in templates
+* 9f312ef : add ignored files for todomvc
+* ed51490 : Update package.json
+* 2792f3c : readme, version, add dist files
+* 8d31fad : set ci NODE_ENV explicitly
+* 7f92bd9 : attempting to fix ci
+* 1b8ef94 : update build
+* 26b776f : add placeholders for unit tests
+* 45e1af4 : add reference links to benchmarks
+* f0bae11 : drop ssr ci for now
+* 6b79396 : fix ssr babel-env on ci
+* aea4f39 : fix duplicate import
+* 4191f25 : adjust ssr API so that user can provide server-side implementations for custom directives
+* 3c7aafa : add circle config file
+* 3dc6088 : use more reliable display check for v-show tests (fix it in PhantomJS)
+* bf14a05 : fix spelling
+* f550933 : fix unit tests in Firefox/Safari
+* 657ba39 : directives v-for v-html v-text v-show (#7)
+* a347820 : fix hydration bugs
+* c8e91ab : client-side hydration
+* 38540b0 : add server-rendered mark for ssr output
+* 9a2c8db : get rid of new function in core so that runtime is fully CSP-compliant
+* 79f3e90 : further tweak render stream
+* a9ee5c9 : small tweak to ssr
+* d08cf7c : streaming renderer!
+* 2111709 : assert setting state in created hook works in ssr
+* 575d55f : fix ssr hoc
+* 018b0e5 : ssr hoc component (failing)
+* 83ea6ef : update ssr with tests
+* fff89df : add waitForUpdate as allowed global in unit tests
+* 4540aaf : fix async failure
+* 75ce539 : use custom async chaining assertion utility
+* 7169d14 : update if tests
+* 9b681f7 : fixed if/for/else render update bug (#8)
+* e649795 : improve linting
+* 8454921 : global api tests (#6)
+* f629b34 : decouple renderer logic and web platform
+* ae7054f : fix ssr for child components
+* d3b598a : fix hyperscript direct string as children
+* 73bc99e : basic ssr
+* f4a2afb : expose context on vnode, simplify render methods
+* 9f5b292 : ssr directives
+* 95a0f3c : naive ssr implementation
+* 14feb83 : move web-specific utils
+* d385137 : ssr wip
+* d6ce314 : ssr wip
+* 0b21d2d : move namespaceMap into web/util
+* 6b84d8e : ship compiler in the same package instead
+* 936e3da : remove beforeMount and mounted hook
+* c947fdd : exposed compile function should be cached version
+* 4e431a5 : support direct string as children
+* 1a21db9 : restructure for server rendering
+* a65b4fa : simplify namespace detection
+* 1dab155 : basic mathml support
+* 213aaf3 : use arrow fns in tests
+* 4c6ed93 : global config tests
+* a04ff9d : remove deprecated code
+* e3717b8 : fixed devDeps about rollup-plugin-alias
+* 9ce3693 : setup unit test
+* 6dd3d5b : add a step to commits e2e test
+* e7f021f : add build aliases for easier importing
+* cf8253c : fix platform compiler directives
+* 955e2f8 : restructure (build pass)
+* ec5bcef : tweak namespace changes
+* 6a8f36d : simplify component
+* 6e251e0 : Change svg parameter to namespace (#3)
+* 065dc31 : more tweak to render function caching
+* 10da27e : fix runtime mount render function caching
+* d046467 : remove casperjs dep
+* 76b821d : fix runtime-only mount
+* 6a000c3 : support array for checkbox v-model & :value bindings for non-strings
+* ad00f3d : support .trim modifier on v-model
+* 7abe8ff : support v-once
+* e89d2cb : fix template slot
+* caf2828 : make reorder benchmark valid html
+* 959a959 : cache decodeHTML
+* 16e5474 : move staticTree init into runtime $mount
+* 8c64a0e : fix static detection for built-ins
+* b882844 : optimize static trees
+* 54eca49 : tweak
+* a5ea902 : add optimizer
+* b225de7 : support dynamic slot target
+* d0c99b1 : make modal test more stable in chrome (all e2e tests pass)
+* a9fbc0b : remove old e2e tests
+* 5807adc : e2e test for todomvc
+* c942793 : e2e tests for tree
+* 6170a55 : e2e test for svg
+* b38b4b2 : fix watch in firefox again + e2e test for select2
+* f9c3d70 : modal e2e test
+* f8be60c : fix transition on appear
+* c403f56 : grid e2e test
+* 7b180cd : commits e2e test
+* 0220fc3 : allow runner to run sub tests
+* 04b8a75 : markdown test pass
+* 4d018cb : start switching to nightwatch
+* 64b3b31 : fix html attribute escape in Safari
+* 316ba12 : fix watch option in firefox
+* f25ef3f : simplify root mount
+* f144d7d : do not update static attrs
+* 45b4b31 : fix reorder benchmark
+* 9a347e0 : allow data to be undefined
+* 9c3d714 : small tweak
+* 8cf53ad : rename
+* 6c8182e : deprecate $remove
+* 45d9460 : fix component root node class update
+* 20f798f : support arrays in Vue.set()
+* e942552 : fix v-show without transition
+* 4849784 : small optimization
+* 3d8d3e8 : transition-on-appear for v-show
+* 732c10a : transition-on-appear
+* d879877 : rename
+* aaa334d : fix transition remove
+* 0503954 : improve transition default value handling
+* 97f989a : improve transition/v-show interaction
+* e1f48a6 : support transitions on v-show
+* 58b1b75 : improve runtime directive handling
+* 508fd44 : rename
+* c4a933c : update package.json decription
+* 48a5b42 : fix create hooks duplicate invocation
+* 3f2fb1f : fix addStyleBinding helper
+* da42ca8 : add e2e test for modal
+* 7f7040c : restructure
+* bc0df10 : use isDef
+* 4c6b843 : fix child component nodes hook invocations
+* 23c2530 : fix listeners
+* f96b189 : wip
+* 1b9343f : wip
+* 83210df : should use production version in benchmarks
+* 3de33b3 : fix ref
+* b28888d : use text/x-template for modal example
+* 2ae27c3 : fix firebase example leave transition
+* 10ac41a : add modal example
+* 0a9fa69 : vnode.data.child -> vnode.child
+* a7737c8 : child component sets parent vnode.elm
+* d2fa013 : reduce indent
+* 49ab77c : fix enterActiveClass apply timing
+* 873c24c : js transition hooks
+* f200e80 : add leaveActiveClass
+* 2a7c44f : ensure enter and leave transitions happen simultaneously
+* 7b97d97 : dynamic component transition
+* dd04e62 : leave transition
+* 82bbbcf : improve build script
+* ae881f5 : use umd for cjs build size check
+* 9d5d467 : robust transition/animation detection
+* ba9429f : make big table benchmark well formatted html
+* bafc3c9 : transition wip
+* 52ac04d : transition wip
+* 79e1640 : fix proxy has return value
+* 3f9b3ec : remove unneeded file
+* 8e32090 : render should be a reserved tag too
+* 7926f6a : guard on
+* 95a9282 : early return in vdom update modules
+* dc183ed : process transition in compiler
+* d6ea2e5 : tweak
+* 4fe5d94 : tweak
+* 9999e95 : more refactor
+* 5e7ebec : improve proxy detection
+* 2082eb9 : refactor wip
+* 0879e99 : drop stage-2
+* 60de62b : tweak
+* 42f1301 : naive async components
+* 5184f9b : ignore map
+* bb2dc73 : fix runtime build exports
+* 50e9f6b : use custom babel preset
+* e1fd825 : naming
+* 6816a6d : move svgNS to dom-updater
+* 4512406 : restructure
+* 44f9ae6 : decouple createElement from DOM
+* 3630bf1 : support <component :is="...">
+* a1ebdbb : detect non-existent property access with ES6 Proxy
+* df5a347 : move proxy/unproxy into observer
+* af56242 : component vnode tag should be related to the constructor id
+* 20200de : allow script tags
+* 8e248ef : support v-pre
+* 5f06af5 : document parser AST
+* 887d037 : better template/render warning
+* cbc6fe6 : do not warn real custom elements
+* c13bbcb : fix directive merging
+* 122d164 : warn against incorrect propsData usage
+* d5914fe : big table title
+* 4fecfe2 : improve svg dots benchmark
+* bf39f19 : fix big table matching
+* 5174bb2 : better IE9 v-model support
+* aef93b3 : tweak
+* 6e9d332 : handle v-model runtime composition event check & IE9
+* 5d799ab : prefix sniffing for :style
+* 86bc00e : handle style array syntax
+* 93498ab : handle circular refs in deep watch
+* 6fc97fc : handle xlink
+* 24ef7f4 : use for in where Object.keys isn't necessary
+* cbbe65f : handle attribute interpolation
+* b58ec1f : handle enumerated attrs
+* e9dbf87 : extract shared utils
+* fb21057 : move things around a bit
+* c11a706 : v-text
+* 368b2ff : object and range v-for
+* 50efdc5 : v-for iterator syntax
+* 0f3cbe6 : handle root props
+* d6bef79 : convert default props
+* 7fc68b4 : remove filter from config asset list
+* 2aecd90 : remove el
+* 7b2dc50 : unify v-ref/v-el, and handle v-ref on/inside v-for
+* c2ad444 : adjust context detection, ensure proper context in manual render functions
+* 78e82bb : tweak
+* f42085c : copyright year
+* 0e5b7ee : remove log
+* d3c64fa : only diff data if props did not change
+* a1e2dfc : update build script
+* d2ca5c5 : make compiler warning customizable
+* 91455a6 : prop validation
+* fe13e21 : move on into directives
+* 3ca2c92 : restructure global api
+* 1deceda : move lifecycle hooks into config
+* ea18ba5 : bench component order
+* ca81482 : fix attr codegen
+* 583a7bb : fix root instance ready
+* d018a72 : el
+* 403e238 : fix toString
+* 09a4ba8 : refs
+* cec2196 : warn against duplicate keys
+* 9db07d3 : tweak bench
+* 7ce33d4 : tweak bench
+* 230aff1 : improve table bench
+* e666fb4 : tweak
+* 2ef8d10 : add e2e test for select2
+* ceab86d : add e2e tests
+* 28abdf3 : handle phantomjs parsing
+* f135891 : fix prop unsetting in phantomjs 2
+* 4727842 : fix e2e tree
+* 32ca8e7 : fix svg e2e
+* 119286f : setting up e2e
+* 0c6c748 : use more descriptive function names
+* 8ff2175 : remove log
+* 849e9ba : fix ready hook
+* 4d508dc : fix things
+* af1f1d3 : tweak
+* 61a5249 : remove log, fix logic
+* c16fc2c : children render context
+* 1df748d : thunkify children
+* 55f3d6d : include full html element list
+* 7fae1ba : optimize update order
+* 38204b7 : fix event update
+* 542035f : tweak diff parent data
+* 5b30f3e : Revert "simplify array change detection"
+* f3970f8 : use null check for old attrs
+* 71ca7b7 : add benchmarks
+* 0257afb : proper component update diff
+* d1fc82d : fix parent data merge
+* 11a4add : ready hook
+* ab67761 : add updated select2 example
+* 2fa6e6f : support slot default content
+* 0e940ac : fix update props
+* fdfcb93 : cache camelize and hyphenate
+* 57bb93e : should only call updated after mount
+* c12ddd9 : update props checking
+* eea62a2 : add examples
+* 7721f92 : support v-html
+* 40f5f3d : move webpack config into build
+* 054c2c3 : fix attr merging
+* b6a1db8 : desc
+* 0bfa3aa : name
+* b995ed3 : support v-else
+* 5590378 : simplify array change detection
+* 1a35cf4 : support template slot
+* e9ae818 : fix children flattening
+* 57f4b73 : fix watch option string
+* dca992a : fix lint
+* 4e86d3a : fix child component keys
+* be9e16e : handle component listeners
+* 1cbaeb7 : fix child patching
+* 56073ca : make prop bindings immutable
+* 7c3fa3c : trim ending whitespace
+* 48f328b : avoid conversion when setting props
+* 5c1063a : make props reactive
+* 1476c4a : svg
+* 5970dbd : fix dynamic props
+* e223b87 : only preserve whitespace if it is not right after starting tag
+* 8218eae : props
+* 7b539b8 : remove thunk
+* d6c5abb : slots
+* 9a10158 : warn unkown element
+* 84ce91d : component resolution
+* 8bc6915 : parent/children
+* f5fcfb6 : fix child component destroy
+* 058c555 : tweak
+* 5c3edf8 : fix child update check
+* 5ce4979 : first component rendered!
+* f2c8880 : component wip
+* 102b6f1 : compiler should output code (move function generation into mount)
+* 753436c : code cleanup
+* 134b9f8 : add entities dependency
+* 55faec9 : fix runtime directive unbind
+* 3e39d76 : allow registering custom compile-time directives
+* beb519c : add unbind hook for runtime directives
+* 0b5e962 : fully support todomvc
+* 93978f8 : fix multiple events
+* 8cf836f : directives wip
+* a9d74c1 : runtime directive codegen
+* 3dea52f : restructure
+* bdf9f8c : tweak
+* 9389b1b : fix model
+* 5228ccb : wip
+* 5c31f65 : move template specific logic into template-parser
+* 1af8c6f : separate template-parser and html-parser
+* adb8136 : update build for compiler
+* 03804ce : support watch option
+* 23c1c61 : support embedded render
+* 9eab970 : cleanup
+* 914da49 : support svg
+* c147e35 : restructure
+* 0694a9b : lifecycle hooks
+* d04dbab : handle template edge cases
+* 448f3a6 : warn against multiple root elements
+* 0e1ac07 : support template option
+* 314f25e : progress
+* 7b85463 : watch & events
+* 6bb9096 : expose compile
+* b5800b2 : restructure instance
+* 91a04ad : refactor state
+* df97df1 : v-model modifiers
+* 4ea6ae3 : use object format modifiers
+* 9af0745 : avoid html decoding empty strings
+* fa46e8f : fix caching with preserveWhiteSpace
+* 0ab0600 : restructure
+* c9c4291 : remove some useless code
+* f1bdaa8 : properly initialize state
+* 5d58567 : fix class initial application
+* 68c99b2 : lint it
+* fe3761a : remove log
+* d048b44 : refactor so that compiler is decoupled from the rest of the codebase
+* e918476 : decode html entities in text nodes
+* 7f7132e : support key modifiers
+* c8c96a4 : event modifiers
+* e577a1a : mvoe text parser into codegen helper
+* 1c8afd2 : separate builds with/without compiler
+* 7a4d30f : use more explicit naming
+* 8c00a1d : implement all v-model types
+* 6cca5ec : refactor codegen
+* b76bdfd : include watcher Set enhancement
+* ad11aa1 : fix syncness
+* e094b00 : add preserveWhitespace option
+* 8f5a69b : rough v-model
+* e30055e : use isObject
+* cc57e96 : basic event handling
+* d5c1c3a : no need for escapeNewline
+* cdfaa7b : no need for comment handler
+* 551df9a : cleanup
+* 3d6b5fc : fix things
+* 7c24229 : code cleanup
+* 56607f0 : move class rendering into vdom
+* 69e94eb : move flatten into vdom implementation
+* c1a8267 : bump version
+* a879ec0 : init
